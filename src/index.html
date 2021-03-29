@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Index</title>
+
+  @@include('layouts/_links.html')
+  <link rel="stylesheet" href="libs/owlcarousel/owl.carousel.min.css" type="text/css"/>
+</head>
+<body>
+
+@@include('layouts/_mobile-menu.html')
+
+@@include('layouts/_header.html')
+
+
+
+
+<main class="main home__page-main">
+    <div class="my-container">
+
+
+      <div class="owl-carousel owl-theme main__slider slider-options">
+
+        <div class="main__slider-item">
+
+          <div class="main__slider-left">
+            <div class="main__slider-content">
+              <h1 class="main__slider-title">Пополнение
+                карт ATTO!</h1>
+              <p class="main__slider-text">Пополнение карты Вы можете осуществить
+                через мобильное приложение единого оператора
+                или воспользовавшись приложениями Oson,
+                Apelsin, MyUzCard, Click, Payme, PAYNET.</p>
+
+              <a href="#!" class="main-btn">Узнать больше</a>
+
+            </div>
+          </div>
+          <div class="main__slider-right parallax-js"
+               style="
+        background: url('img/svg/banner-background.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      "
+          >
+            <img  data-depth="0.05" class="layer" src="img/banner-item.png" alt="">
+          </div>
+
+        </div>
+
+        <div class="main__slider-item">
+
+          <div class="main__slider-left">
+            <div class="main__slider-content">
+              <h1 class="main__slider-title">Мобильное
+                приложение</h1>
+              <ul class="main__slider-ul">
+                <li>Контролируй свои расходы</li>
+                <li>Пополняй карту онлайн</li>
+                <li>Заблокируй карту в случае утери</li>
+              </ul>
+
+              <div class="mobile-app">
+                <a href="#!" target="_blank" class="mobile-app-item">
+                  <img src="img/svg/appstore.svg" alt="">
+                </a>
+                <a href="#!" target="_blank" class="mobile-app-item">
+                  <img src="img/svg/googleplay.svg" alt="">
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <div class="main__slider-right parallax-js"
+               style="
+        background: url('img/svg/banner-background.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      "
+          >
+            <img  data-depth="0.05" class="layer" src="img/banner-item-2.png" alt="">
+          </div>
+
+        </div>
+
+        <div class="main__slider-item">
+
+          <div class="main__slider-left">
+            <div class="main__slider-content">
+              <h1 class="main__slider-title">Мобильное
+                приложение</h1>
+              <ul class="main__slider-ul">
+                <li>Контролируй свои расходы</li>
+                <li>Пополняй карту онлайн</li>
+                <li>Заблокируй карту в случае утери</li>
+              </ul>
+
+              <div class="mobile-app">
+                <a href="#!" target="_blank" class="mobile-app-item">
+                  <img src="img/svg/appstore.svg" alt="">
+                </a>
+                <a href="#!" target="_blank" class="mobile-app-item">
+                  <img src="img/svg/googleplay.svg" alt="">
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <div class="main__slider-right parallax-js"
+               style="
+        background: url('img/svg/banner-background.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      "
+          >
+            <img  data-depth="0.05" class="layer" src="img/banner-item-2.png" alt="">
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+</main>
+
+
+@@include('layouts/_footer.html')
+
+@@include('layouts/_scripts.html')
+
+
+<script src="libs/parallax/jquery.parallax.min.js"></script>
+<script src="libs/owlcarousel/owl.carousel.min.js"></script>
+
+
+<script>
+
+  $(document).ready(function(){
+    let $scene = $('.parallax-js').parallax({
+      scalarX: 100,
+      scalarY: 100,
+    });
+  });
+
+</script>
+
+<script>
+  $('.main__slider').owlCarousel({
+    loop:true,
+    dots: true,
+    margin:10,
+    nav:false,
+    // autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    smartSpeed: 1500,
+    responsive:{
+      0:{
+        items:1
+      },
+      600:{
+        items:1
+      },
+      1000:{
+        items:1
+      }
+    }
+  })
+</script>
+
+</body>
+
+
+
+</html>
