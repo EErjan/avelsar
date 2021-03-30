@@ -485,6 +485,7 @@ label {
   font-family: "Gilroy-Bold", sans-serif;
   text-align: center;
   padding: 0 20px;
+  color: #232455;
 }
 
 .section__title-secondary {
@@ -685,6 +686,88 @@ label {
   margin-top: 15px;
   font-family: "Gilroy-Medium", sans-serif;
   text-align: center;
+}
+
+.tab__block {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.tab__block-nav {
+  width: 100%;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tab__block-nav a {
+  display: inline-block;
+  line-height: 30px;
+  background-color: #E6E6F2;
+  color: #232455;
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.tab__block-nav a:last-child {
+  border: none;
+}
+
+.tab__block-nav a.active {
+  color: #FFFFFF;
+  background-color: #232455;
+}
+
+.tab__block .tabContainer {
+  width: 100%;
+  height: auto;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+  min-height: 250px;
+}
+
+.tab__block .Tabcondent {
+  font-family: "Gilroy-Medium", sans-serif;
+  background-color: #E6E6F2;
+  color: #232455;
+  text-align: center;
+  opacity: 0;
+  min-height: 250px;
+  padding: 20px;
+  border-radius: 0;
+  margin: 0 auto;
+  -webkit-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+  position: absolute;
+  top: 0;
+}
+
+.tab__block .Tabcondent.active {
+  width: 100%;
+  opacity: 1;
+  border-radius: 0;
+  margin: 0 auto;
+  top: 0;
+  -webkit-transition: all ease-in-out 0.6s;
+  -o-transition: all ease-in-out 0.6s;
+  transition: all ease-in-out 0.6s;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 
 .header-btn {
@@ -900,10 +983,9 @@ label {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 10px 12px;
+  padding: 18px 18px;
   font-size: 14px;
   font-family: "Gilroy-Bold", sans-serif;
-  border-radius: 4px;
   overflow: hidden;
 }
 
