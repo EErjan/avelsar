@@ -1,8 +1,4 @@
 
-setTimeout(function(){
-  $('.preloader').fadeOut();
-}, 1000);
-
 $(document).on("click", ".js-toggle", function(e) {
     e.preventDefault();
     $("body").toggleClass("has-menu");
@@ -93,52 +89,4 @@ try {
 
 }
 
-// Toggle password
-try {
-  $(".toggle-password").click(function() {
 
-    $(this).toggleClass("fa-eye fa-eye-slash");
-    var input = $($(this).attr("toggle"));
-    if (input.attr("type") == "password") {
-      input.attr("type", "text");
-    } else {
-      input.attr("type", "password");
-    }
-  });
-} catch (e) {
-
-}
-
-
-
-// Photo upload
-
-try {
-  openUploader = function() {
-    document.getElementById('uploadImage').click();
-  }
-
-  uploadHandler = function() {
-    let file = document.querySelector('input[type=file]').files[0];
-    let reader = new FileReader();
-    let preview = document.getElementById('uploadedImage');
-
-    reader.addEventListener("load", function () {
-      preview.src = reader.result;
-    }, false);
-    if (file) {
-      reader.readAsDataURL(file);
-      reader.onloadend = function () {
-        localStorage.setItem('tempImg', reader.result.split(',')[1]);
-      }
-    }
-  }
-
-  removeImage = function() {
-    let preview = document.getElementById('uploadedImage');
-    preview.src = '';
-  };
-
-} catch (e) {
-
-}

@@ -29,7 +29,7 @@
   }
 
   &__logo {
-    max-width: 150px;
+    max-width: 200px;
     margin-right: 50px;
     img {
       width: 100%;
@@ -49,9 +49,18 @@
     }
 
     &-link {
-      padding: 10px;
+      position: relative;
+      display: inline-flex;
+      padding: 10px 12px;
       font-size: 14px;
       font-family: "Gilroy-Bold", sans-serif;
+      border-radius: 4px;
+      overflow: hidden;
+
+      &:hover {
+        background: $dark-blue;
+        color: $white;
+      }
     }
 
   }
