@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="libs/font-awesome.min.css">
 <link rel="stylesheet" href="libs/reset.css">
 <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="libs/animate.min.css">
 <link rel="stylesheet" href="css/main.min.css">
 
 
@@ -131,10 +132,6 @@
                         <a href="#!" class="header__menu-link">Контакты</a>
                     </li>
 
-                    <li class="header__menu-item">
-                        <a href="#!" class="header__menu-link">FAQ</a>
-                    </li>
-
                 </ul>
 
                 <div class="header__contacts">
@@ -241,21 +238,13 @@
                     <h1 class="section__title-secondary">О нас</h1>
                     <div class="about-us__content">
                         <p class="about-us__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam, architecto autem
-                            delectus doloremque doloribus ea, eius expedita laudantium magnam magni minus modi molestiae
-                            natus necessitatibus nobis porro quae quasi quia quibusdam quidem quis rerum sed suscipit
-                            tenetur. Accusantium facilis ipsum laboriosam, magnam natus nemo numquam optio veniam.
-                            Accusamus ad alias asperiores aspernatur assumenda aut beatae corporis cum, cumque dolores
-                            ea enim eos fugiat incidunt iure laudantium molestias natus neque pariatur perferendis
-                            quisquam repudiandae voluptate. Deleniti dolores eos numquam possimus quidem rerum soluta
-                            veritatis. Consequatur consequuntur cupiditate distinctio dolorem ea iure laborum, maxime
-                            minima nobis, odio sequi similique tempora, ullam!
+                            Компания OOO “AVELSAR”, одно из перспективных развивающих транспортно (экспедитерской) компаний и одним из учредителем которой является АО “Узтемирйулконтейнер” по перевозкам экспортно-импортных и транзитных грузов по авто и железным дорогам Центральной Азии, а также других стран СНГ и Балтии. Наша компания имеет честь предложить Вам оказать весь спектр логистических услуг, а также обеспечение доставки Ваших грузов от двери до двери. Наши молодые и опытные специалисты готовы ответить на все Ваши вопросы и предложить наиболее выгодные и оптимальные условия перевозки Вашего груза. Наша надежность, оперативность и высокий уровень сервиса доказаны работы с внешнеторговыми компаниями и высокой оценкой наших партнеров по всему миру. Девиз нашей компании: « Надежность - залог успеха..».
                         </p>
                     </div>
                 </div>
                 <div class="about-us__right">
 
-                    <div class="about-us__photo ">
+                    <div class="about-us__photo">
                         <img src="img/slider-4.jpg" alt="">
                     </div>
 
@@ -608,8 +597,7 @@
 
                     <div class="footer__item-content">
                         <p class="footer__item-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam eligendi ipsam sed!
-                            Consequuntur corporis eum facilis fugiat illum neque officia!
+                            Реальность нашей команды – это огромное количество успешно выполненных заказов, широчайшая база постоянных клиентов, сотрудничество с ведущими компаниями и безупречное качество услуг.
                         </p>
                     </div>
                 </div>
@@ -744,11 +732,12 @@
 <script>
     $('.main__slider').owlCarousel({
         loop: true,
-        // dots: true,
-        dots: false,
+        dots: true,
         // margin:10,
         nav: false,
-        // autoplay: true,
+        mouseDrag: false,
+        animateOut: 'fadeOut',
+        autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
         smartSpeed: 1500,
@@ -781,6 +770,15 @@
             }
         }
     })
+</script>
+
+<script>
+    (function(w, d, s, h, id) {
+        w.roistatProjectId = id; w.roistatHost = h;
+        var p = d.location.protocol == "https:" ? "https://" : "http://";
+        var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init?referrer="+encodeURIComponent(d.location.href);
+        var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+    })(window, document, 'script', 'cloud.roistat.com', 'bf66ddc4364079a63740a8a938936e21');
 </script>
 
 </body>
