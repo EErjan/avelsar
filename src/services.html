@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+
+    @@include('layouts/_links.html')
+    <link rel="stylesheet" href="libs/owlcarousel/owl.carousel.min.css" type="text/css"/>
+</head>
+<body>
+
+@@include('layouts/_mobile-menu.html')
+
+@@include('layouts/_header.html')
+
+
+<main class="main home__page-main">
+
+
+    <div class="my-container">
+
+        <section class="section about-us">
+            <div class="about-us__wrap">
+                <div class="about-us__left">
+                    <h1 class="section__title-secondary">О нас</h1>
+                    <div class="about-us__content">
+                        <p class="about-us__text">
+                            Компания OOO “AVELSAR”, одно из перспективных развивающих транспортно (экспедитерской) компаний и одним из учредителем которой является АО “Узтемирйулконтейнер” по перевозкам экспортно-импортных и транзитных грузов по авто и железным дорогам Центральной Азии, а также других стран СНГ и Балтии. Наша компания имеет честь предложить Вам оказать весь спектр логистических услуг, а также обеспечение доставки Ваших грузов от двери до двери. Наши молодые и опытные специалисты готовы ответить на все Ваши вопросы и предложить наиболее выгодные и оптимальные условия перевозки Вашего груза. Наша надежность, оперативность и высокий уровень сервиса доказаны работы с внешнеторговыми компаниями и высокой оценкой наших партнеров по всему миру. Девиз нашей компании: « Надежность - залог успеха..».
+                        </p>
+                    </div>
+                </div>
+                <div class="about-us__right">
+
+                    <div class="about-us__photo">
+                        <img src="img/slider-4.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</main>
+
+
+@@include('layouts/_footer.html')
+
+@@include('layouts/_scripts.html')
+
+
+<script src="libs/owlcarousel/owl.carousel.min.js"></script>
+
+<script>
+
+  function setCommaToText( text ) {
+    var count = Math.trunc( text.length / 3 ), // comma count
+        arr = text.split('').reverse(),
+        s = 0;
+
+    count = ( count * 3 < text.length ) ? count : ( count - 1 );
+
+    for( i = 1; i <= count; i++ ) {
+      arr.splice((i * 3 + s), 0, ",");
+      s++;
+    }
+
+    return arr.reverse().join('');
+  }
+
+  $(function() {
+
+    var b = true;
+    $(window).scroll(function() {
+      countNumbers( '.statistics', 3000 );
+    });
+
+    function countNumbers( numberContrainers, duration ) {
+      var oTop = $(numberContrainers).offset().top - window.innerHeight,
+          duration = duration || 2000;
+
+      if (b && $(window).scrollTop() > oTop) {
+        $('.count').each(function() {
+          var $this = $(this),
+              countStart = parseInt($this.attr('data-start')) || 0,
+              countTo = parseInt($this.attr('data-count'));
+
+          $({
+            countNum: countStart
+          }).animate({
+                countNum: countTo
+              },
+
+              {
+
+                duration: duration,
+                easing: 'swing',
+                step: function() {
+                  $this.text( setCommaToText( Math.floor(this.countNum).toString() ) );
+                },
+                complete: function() {
+                  $this.text( setCommaToText( this.countNum.toString() ) );
+                }
+
+              });
+        });
+        b = false;
+      }
+    }
+
+  })
+</script>
+
+<script>
+    $('.main__slider').owlCarousel({
+        loop: true,
+        dots: true,
+        // margin:10,
+        nav: false,
+        mouseDrag: false,
+        animateOut: 'fadeOut',
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        smartSpeed: 1500,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
+
+    $('.partners__slider').owlCarousel({
+        loop:true,
+        margin:30,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
+    })
+</script>
+
+<script>
+    (function(w, d, s, h, id) {
+        w.roistatProjectId = id; w.roistatHost = h;
+        var p = d.location.protocol == "https:" ? "https://" : "http://";
+        var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init?referrer="+encodeURIComponent(d.location.href);
+        var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+    })(window, document, 'script', 'cloud.roistat.com', 'bf66ddc4364079a63740a8a938936e21');
+</script>
+
+</body>
+
+
+</html>
