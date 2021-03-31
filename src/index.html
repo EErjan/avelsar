@@ -125,7 +125,7 @@
                 </div>
                 <div class="about-us__right">
 
-                    <div class="about-us__photo">
+                    <div class="about-us__photo ">
                         <img src="img/slider-4.jpg" alt="">
                     </div>
 
@@ -376,7 +376,31 @@
     </div>
 
     <section class="section partners">
-        <div class="my-container"></div>
+        <div class="my-container">
+            <div class="section__wrap">
+
+                <div class="section__title">Нам доверяют</div>
+
+                <div class="owl-carousel owl-theme partners__slider">
+                    <div class="item partners__slider-item">
+                        <img src="img/partners-1.png" alt="">
+                    </div>
+
+                    <div class="item partners__slider-item">
+                        <img src="img/partners-2.png" alt="">
+                    </div>
+
+                    <div class="item partners__slider-item">
+                        <img src="img/partners-3.gif" alt="">
+                    </div>
+
+                    <div class="item partners__slider-item">
+                        <img src="img/partners-4.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -423,6 +447,23 @@
             },
             1000: {
                 items: 1
+            }
+        }
+    })
+
+    $('.partners__slider').owlCarousel({
+        loop:true,
+        margin:15,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
             }
         }
     })
