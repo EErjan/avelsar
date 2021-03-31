@@ -489,6 +489,7 @@ label {
 }
 
 .section__title-secondary {
+  color: #232455;
   font-family: "Gilroy-Bold", sans-serif;
   font-size: 48px;
 }
@@ -506,6 +507,7 @@ label {
 
 .section__banner .section__title-secondary {
   font-size: 42px;
+  color: #FFFFFF;
 }
 
 .section__banner .section__wrap {
@@ -587,7 +589,6 @@ label {
 }
 
 .about-us__photo {
-  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -611,7 +612,7 @@ label {
 
 .services__item {
   position: relative;
-  min-height: 250px;
+  min-height: 450px;
   width: 100%;
   color: #FFFFFF;
   padding: 30px;
@@ -624,13 +625,12 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
-  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -654,43 +654,115 @@ label {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #0000008c;
+  background: #000000a8;
 }
 
 .services__item:hover::before {
   background: transparent;
 }
 
-.services__item:hover .services__item-content {
-  padding-bottom: 20px;
+.services__item:hover .services__item-text {
+  opacity: 1;
+}
+
+.services__item:hover .services__item-title {
+  margin-top: 0;
 }
 
 .services__item-content {
   position: relative;
   z-index: 2;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
 }
 
 .services__item-title {
+  width: 100%;
   font-size: 28px;
   text-align: center;
   font-family: "Gilroy-Bold", sans-serif;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  margin-top: 80px;
 }
 
 .services__item-text {
-  min-height: 30px;
+  min-height: 72px;
   font-size: 16px;
   line-height: 1.5;
   margin-top: 15px;
-  font-family: "Gilroy-Medium", sans-serif;
+  font-family: "Gilroy-Bold", sans-serif;
   text-align: center;
+  opacity: 0;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 .tab__block {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.tab__block-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.tab__block-left {
+  width: 40%;
+  padding: 20px;
+}
+
+.tab__block-right {
+  width: 60%;
+  padding: 20px;
+}
+
+.tab__block-photo img {
+  width: 100%;
+  max-height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 20px 0;
+}
+
+.tab__block-title {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #232455;
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+.tab__block-text {
+  text-align: left;
+  font-size: 16px;
+  font-family: "Gilroy-Medium", sans-serif;
+}
+
+.tab__block ul {
+  list-style-type: decimal;
+  text-align: left;
+}
+
+.tab__block ul li {
+  font-size: 16px;
+  color: #232455;
 }
 
 .tab__block-nav {
@@ -710,7 +782,7 @@ label {
 .tab__block-nav a {
   display: inline-block;
   line-height: 30px;
-  background-color: #E6E6F2;
+  background-color: #f5f5f5;
   color: #232455;
   font-family: "Gilroy-Medium", sans-serif;
   font-size: 18px;
@@ -738,7 +810,7 @@ label {
 
 .tab__block .Tabcondent {
   font-family: "Gilroy-Medium", sans-serif;
-  background-color: #E6E6F2;
+  background-color: transparent;
   color: #232455;
   text-align: center;
   opacity: 0;
@@ -754,6 +826,8 @@ label {
           transform: scale(0.8);
   position: absolute;
   top: 0;
+  -webkit-box-shadow: 0px 5px 30px 0px rgba(35, 36, 85, 0.3);
+  box-shadow: 0px 5px 30px 0px rgba(35, 36, 85, 0.3);
 }
 
 .tab__block .Tabcondent.active {
