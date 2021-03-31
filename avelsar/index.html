@@ -138,7 +138,7 @@
                 </ul>
 
                 <div class="header__contacts">
-                    <a href="#!" class="header__contacts-link">+998 78 140 08 08</a>
+                    <a href="#!" class="header__contacts-link">+(998 71) 291-20-33</a>
                 </div>
             </div>
         </div>
@@ -533,12 +533,139 @@
         </div>
     </section>
 
+    <section class="section statistics"
+        style="
+                background-image: url('img/slider-2.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            "
+    >
+        <div class="my-container statistics__inner">
+            <div class="section__wrap">
+                <div class="statistics__wrap">
+                    <div class="statistics__item">
+                        <div class="statistics__item-icon">
+                            <i class="fa fa-truck" aria-hidden="true"></i>
+                        </div>
+                        <div class="statistics__item-content">
+                            <h2 class="statistics__item-numb count"
+                                data-count="500"
+                            >500</h2>
+                            <span class="statistics__item-text">доставленных груза</span>
+                        </div>
+                    </div>
+
+                    <div class="statistics__item">
+                        <div class="statistics__item-icon">
+                            <i class="fa fa-globe" aria-hidden="true"></i>
+                        </div>
+                        <div class="statistics__item-content">
+                            <h2 class="statistics__item-numb count"
+                            data-count="11">11</h2>
+                            <span class="statistics__item-text">стран</span>
+                        </div>
+                    </div>
+
+                    <div class="statistics__item">
+                        <div class="statistics__item-icon">
+                            <i class="fa fa-compass" aria-hidden="true"></i>
+                        </div>
+                        <div class="statistics__item-content">
+                            <h2 class="statistics__item-numb count"
+                                data-count="1500">1500</h2>
+                            <span class="statistics__item-text">перевозок</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--    <section class="section cta">-->
+<!--        <div class="my-container">-->
+<!--            <div class="section__wrap">-->
+<!--                <button class="main-btn">Получит расчет</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
 
 </main>
 
 
 <footer class="footer">
-    <div class="my-container">
+    <div class="footer__top">
+        <div class="my-container">
+            <div class="footer__wrap">
+
+                <div class="footer__item">
+                    <h3 class="footer__item-top">
+                        О нас
+                    </h3>
+
+                    <div class="footer__item-content">
+                        <p class="footer__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam eligendi ipsam sed!
+                            Consequuntur corporis eum facilis fugiat illum neque officia!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer__item">
+                    <h3 class="footer__item-top">
+                        Контакты
+                    </h3>
+
+                    <div class="footer__item-content">
+                        <p class="footer__item-text">
+                            8А, улица Ески Саракулк,
+                            Мирабадский район,
+                            г. Ташкент,
+                            Узбекистан
+                        </p>
+
+                        <a href="tel:+(998 71) 291-20-33" class="footer__item-link">+(998 71) 291-20-33</a>
+                    </div>
+                </div>
+
+                <div class="footer__item">
+                    <h3 class="footer__item-top">
+                        Следите за нами
+                    </h3>
+
+                    <div class="footer__item-content">
+
+                        <div class="footer__socials">
+                            <a class="footer__socials-item">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a class="footer__socials-item">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a class="footer__socials-item">
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <p class="footer__item-text"></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="my-container">
+            <div class="footer__wrap">
+                <div class="copyright">
+                    <p> © 2021 Все права защищены. Avelsar
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
 
@@ -552,19 +679,66 @@
 
 
 
-<script src="libs/parallax/jquery.parallax.min.js"></script>
 <script src="libs/owlcarousel/owl.carousel.min.js"></script>
-
 
 <script>
 
-    $(document).ready(function () {
-        let $scene = $('.parallax-js').parallax({
-            scalarX: 100,
-            scalarY: 100,
-        });
+  function setCommaToText( text ) {
+    var count = Math.trunc( text.length / 3 ), // comma count
+        arr = text.split('').reverse(),
+        s = 0;
+
+    count = ( count * 3 < text.length ) ? count : ( count - 1 );
+
+    for( i = 1; i <= count; i++ ) {
+      arr.splice((i * 3 + s), 0, ",");
+      s++;
+    }
+
+    return arr.reverse().join('');
+  }
+
+  $(function() {
+
+    var b = true;
+    $(window).scroll(function() {
+      countNumbers( '.statistics', 3000 );
     });
 
+    function countNumbers( numberContrainers, duration ) {
+      var oTop = $(numberContrainers).offset().top - window.innerHeight,
+          duration = duration || 2000;
+
+      if (b && $(window).scrollTop() > oTop) {
+        $('.count').each(function() {
+          var $this = $(this),
+              countStart = parseInt($this.attr('data-start')) || 0,
+              countTo = parseInt($this.attr('data-count'));
+
+          $({
+            countNum: countStart
+          }).animate({
+                countNum: countTo
+              },
+
+              {
+
+                duration: duration,
+                easing: 'swing',
+                step: function() {
+                  $this.text( setCommaToText( Math.floor(this.countNum).toString() ) );
+                },
+                complete: function() {
+                  $this.text( setCommaToText( this.countNum.toString() ) );
+                }
+
+              });
+        });
+        b = false;
+      }
+    }
+
+  })
 </script>
 
 <script>
@@ -593,7 +767,7 @@
 
     $('.partners__slider').owlCarousel({
         loop:true,
-        margin:15,
+        margin:30,
         nav:true,
         responsive:{
             0:{
