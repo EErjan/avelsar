@@ -789,3 +789,60 @@
   }
 
 }
+
+// Preloader
+
+// Preloader
+
+.preloader {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 444;
+  overflow-y: auto;
+
+  &__wrap {
+    margin: auto;
+    max-width: 300px;
+    width: 100%;
+    animation-delay: 3s;
+
+    .logo {
+      max-width: 500px;
+      width: 100%;
+
+      -webkit-animation: cssAnimation 2s infinite;
+      -moz-animation: cssAnimation 2s infinite;
+      -o-animation: cssAnimation 2s infinite;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes cssAnimation {
+  0% { -webkit-transform: rotate(0deg) scale(1) }
+  50% { -webkit-transform: rotate(0deg) scale(1.2) }
+  100% { -webkit-transform: rotate(0deg) scale(1) }
+}
+@-moz-keyframes cssAnimation {
+  0% { -webkit-transform: rotate(0deg) scale(1) }
+  50% { -webkit-transform: rotate(0deg) scale(1.2) }
+  100% { -webkit-transform: rotate(0deg) scale(1) }
+}
+@-o-keyframes cssAnimation {
+  0% { -webkit-transform: rotate(0deg) scale(1) }
+  50% { -webkit-transform: rotate(0deg) scale(1.2) }
+  100% { -webkit-transform: rotate(0deg) scale(1) }
+}

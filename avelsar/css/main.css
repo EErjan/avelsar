@@ -1213,6 +1213,63 @@ label {
   margin-top: 30px;
 }
 
+.preloader {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 444;
+  overflow-y: auto;
+}
+
+.preloader__wrap {
+  margin: auto;
+  max-width: 300px;
+  width: 100%;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.preloader__wrap .logo {
+  max-width: 500px;
+  width: 100%;
+  -webkit-animation: cssAnimation 2s infinite;
+  -moz-animation: cssAnimation 2s infinite;
+  -o-animation: cssAnimation 2s infinite;
+}
+
+.preloader__wrap .logo img {
+  width: 100%;
+}
+
+@-webkit-keyframes cssAnimation {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    -webkit-transform: rotate(0deg) scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg) scale(1);
+  }
+}
+
 .main-btn {
   font-size: 16px;
   font-family: "Gilroy-Bold", sans-serif;
