@@ -123,13 +123,20 @@
   &__right {
     max-width: 50%;
     width: 100%;
+    padding: 0 50px;
   }
 
 }
 
 .cargo__truck {
+  overflow: hidden;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+
   img {
     width: 100%;
+    object-fit: contain;
+    overflow: hidden;
   }
 }
 
@@ -481,26 +488,26 @@
   &__slider {
     &-item {
       border-radius: 6px;
-      //background: $white;
       padding: 20px;
-      transition: .2s;
 
       img {
         width: 100%;
         object-fit: contain;
         height: 60px;
-        //filter: grayscale(1);
         filter: brightness(0) invert(1);
+        transition: opacity .45s ease-out,filter .45s ease-out!important;
+        display: block;
       }
 
-      &:hover {
-        img {
-          filter: grayscale(0);
-        }
+      &:hover img {
+        //filter: grayscale(0);
+        filter: unset!important;
+        transition: opacity .45s ease-out,filter .45s ease-out!important;
       }
     }
   }
 }
+
 
 // Statistics
 

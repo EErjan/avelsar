@@ -51,14 +51,28 @@
     &-link {
       position: relative;
       display: inline-flex;
-      padding: 18px 18px;
+      padding: 3px 15px 3px 0;
       font-size: 14px;
       font-family: "Gilroy-Bold", sans-serif;
       overflow: hidden;
+      transition: .3s;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: calc(100% - 2px);
+        width: 0;
+        height: 2px;
+        background: $dark-blue;
+        transition: .3s;
+      }
 
       &:hover {
-        background: $dark-blue;
-        color: $white;
+
+        &::before {
+          width: 40%;
+        }
       }
     }
 

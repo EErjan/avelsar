@@ -533,10 +533,20 @@ label {
 .section__right {
   max-width: 50%;
   width: 100%;
+  padding: 0 50px;
+}
+
+.cargo__truck {
+  overflow: hidden;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
 }
 
 .cargo__truck img {
   width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
 }
 
 .main__slider {
@@ -907,9 +917,6 @@ label {
 .partners__slider-item {
   border-radius: 6px;
   padding: 20px;
-  -webkit-transition: .2s;
-  -o-transition: .2s;
-  transition: .2s;
 }
 
 .partners__slider-item img {
@@ -919,11 +926,22 @@ label {
   height: 60px;
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
+  -webkit-transition: opacity 0.45s ease-out, -webkit-filter 0.45s ease-out !important;
+  transition: opacity 0.45s ease-out, -webkit-filter 0.45s ease-out !important;
+  -o-transition: opacity 0.45s ease-out, filter 0.45s ease-out !important;
+  transition: opacity 0.45s ease-out, filter 0.45s ease-out !important;
+  transition: opacity 0.45s ease-out, filter 0.45s ease-out, -webkit-filter 0.45s ease-out !important;
+  display: block;
 }
 
 .partners__slider-item:hover img {
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
+  -webkit-filter: unset !important;
+          filter: unset !important;
+  -webkit-transition: opacity 0.45s ease-out, -webkit-filter 0.45s ease-out !important;
+  transition: opacity 0.45s ease-out, -webkit-filter 0.45s ease-out !important;
+  -o-transition: opacity 0.45s ease-out, filter 0.45s ease-out !important;
+  transition: opacity 0.45s ease-out, filter 0.45s ease-out !important;
+  transition: opacity 0.45s ease-out, filter 0.45s ease-out, -webkit-filter 0.45s ease-out !important;
 }
 
 .statistics {
@@ -1279,15 +1297,30 @@ label {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 18px 18px;
+  padding: 3px 15px 3px 0;
   font-size: 14px;
   font-family: "Gilroy-Bold", sans-serif;
   overflow: hidden;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
 }
 
-.header__menu-link:hover {
+.header__menu-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: calc(100% - 2px);
+  width: 0;
+  height: 2px;
   background: #232455;
-  color: #FFFFFF;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.header__menu-link:hover::before {
+  width: 40%;
 }
 
 .header__contacts {
