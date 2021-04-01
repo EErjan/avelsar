@@ -124,3 +124,9 @@ $(function() {
       });
   $('[href=#]').click(function(){return false});
 });
+
+// AOS
+
+AOS.init();
+
+

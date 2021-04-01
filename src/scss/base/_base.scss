@@ -634,3 +634,11 @@
 .about__page {
   padding-bottom: 30px;
 }
+
+//
+
+.roistat-lh-popup {
+  top: 50%!important;
+  left: 50%!important;
+  transform: translate(-50%, -50%)!important;
+}

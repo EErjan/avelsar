@@ -1057,6 +1057,14 @@ label {
   padding-bottom: 30px;
 }
 
+.roistat-lh-popup {
+  top: 50% !important;
+  left: 50% !important;
+  -webkit-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important;
+}
+
 .main-btn {
   font-size: 16px;
   font-family: "Gilroy-Bold", sans-serif;
