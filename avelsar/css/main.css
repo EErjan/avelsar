@@ -44,7 +44,7 @@ body {
   text-rendering: optimizeLegibility;
   font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
-  background: #FFEDCB;
+  background: #d1c8ffc7;
 }
 
 h1,
@@ -839,7 +839,7 @@ label {
 .tab__block-nav a {
   display: inline-block;
   line-height: 30px;
-  background-color: #f5f5f5;
+  background-color: #ffffff7a;
   color: #232455;
   font-family: "Gilroy-Medium", sans-serif;
   font-size: 18px;
@@ -899,7 +899,7 @@ label {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  background: #FFFFFF;
+  background: #ffffff7a;
 }
 
 .partners {
@@ -1340,6 +1340,7 @@ label {
 .header {
   position: relative;
   z-index: 2;
+  background: #FFFFFF;
   -webkit-box-shadow: 0 6px 20px rgba(165, 166, 180, 0.13);
           box-shadow: 0 6px 20px rgba(165, 166, 180, 0.13);
   min-height: 56px;

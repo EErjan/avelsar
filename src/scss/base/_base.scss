@@ -411,7 +411,8 @@
     a {
       display: inline-block;
       line-height: 30px;
-      background-color: #f5f5f5;
+      //background-color: #f5f5f5;
+      background-color: #ffffff7a;
       color: $dark-blue;
       font-family: "Gilroy-Medium", sans-serif;
       font-size: 18px;
@@ -467,7 +468,7 @@
       transition: all ease-in-out 0.6s;
       transform: scale(1);
       //display:block
-      background: $white;
+      background: #ffffff7a;
     }
   }
 }
