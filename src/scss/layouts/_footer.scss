@@ -50,19 +50,20 @@
     align-items: center;
     width: 100%;
     &-item {
-      background: $white;
-      border-radius: 50%;
-      width: 30px;
-      height: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       margin-bottom: 15px;
       margin-right: 20px;
+      cursor: pointer;
+
+      &:hover {
+
+       .fa {
+         color: $blue;
+       }
+      }
 
       .fa {
-        color: $dark-blue;
-        font-size: 16px;
+        color: $white;
+        font-size: 24px;
       }
     }
   }
