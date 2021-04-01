@@ -1150,6 +1150,69 @@ label {
   font-family: "Gilroy-Medium", sans-serif;
 }
 
+.contacts__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin-top: 30px;
+  grid-gap: 20px;
+}
+
+.contacts__column {
+  background: #FFFFFF;
+  width: calc(50% - 20px);
+  padding: 30px;
+  border: 1px solid #E6E6F2;
+}
+
+.contacts__title {
+  font-size: 24px;
+  font-family: "Gilroy-Bold", sans-serif;
+  margin-bottom: 20px;
+  color: #232455;
+}
+
+.contacts__text {
+  font-size: 14px;
+  line-height: 1.5;
+  width: 100%;
+  color: #232455;
+  margin-bottom: 20px;
+}
+
+.contacts__row {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contacts__name {
+  color: #232455;
+  font-size: 14px;
+  font-family: "Gilroy-Medium", sans-serif;
+  margin-right: 5px;
+}
+
+.contacts__link {
+  color: #232455;
+  font-size: 14px;
+  font-family: "Gilroy-Medium", sans-serif;
+}
+
+.contacts .main-btn {
+  margin-top: 20px;
+}
+
+.contacts .map__title {
+  margin-top: 30px;
+}
+
 .main-btn {
   font-size: 16px;
   font-family: "Gilroy-Bold", sans-serif;

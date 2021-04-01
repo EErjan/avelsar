@@ -22,22 +22,79 @@
 
     <div class="my-container">
 
-        <section class="section">
+        <section class="section contacts">
             <div class="section__wrap">
                 <h2 class="section__title">
                     Контакты
                 </h2>
 
                 <div class="section__body">
-                    <div class="contacts__block">
-                        <div class="contacts__sidebar">
 
+                    <div class="contacts__wrap">
+                        <div class="contacts__column">
+
+                            <h2 class="contacts__title">Контактная форма</h2>
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="name">Ф.И.О</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Ф.И.О">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Электронная почта</label>
+                                    <input type="text" class="form-control" id="email" placeholder="Электронная почта">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="subject">Тема</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Тема">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone">Телефон</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="Телефон">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Сообщение</label>
+                                    <textarea class="form-control" id="message" placeholder="Сообщение"
+                                              rows="3"></textarea>
+                                </div>
+
+                                <div class="main-btn">Отправить</div>
+
+                            </form>
                         </div>
 
-                        <div class="contacts__contents">
+                        <div class="contacts__column">
+                            <h3 class="contacts__title">
+                                Головной офис
+                            </h3>
 
+                            <p class="contacts__text">8А, улица Ески Саракулк,
+                                Мирабадский район,
+                                г. Ташкент,
+                                Узбекистан
+                            </p>
+
+                            <div class="contacts__row">
+                                <span class="contacts__name">Телефон:</span>
+                                <a href="tel:+(998 71) 291-20-33" class="contacts__link">+(998 71) 291-20-33</a>
+                            </div>
+
+                            <div class="contacts__row">
+                                <span class="contacts__name">E-mail:</span>
+                                <a href="mailto: info@avelsar.uz" class="contacts__link">info@avelsar.uz</a>
+                            </div>
+
+                            <h3 class="contacts__title map__title">На карте</h3>
+
+                            <div class="contacts__map">
+                                <div style="position:relative;overflow:hidden;"><a href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ташкент</a><a href="https://yandex.uz/maps/10335/tashkent/house/YkAYdA9pTkEDQFprfX55dXliZw==/?ll=69.288113%2C41.272462&utm_medium=mapframe&utm_source=maps&z=14" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Эски-Сарикул, 8А — Яндекс.Карты</a><iframe src="https://yandex.uz/map-widget/v1/-/CCUUZPX6kD" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -56,62 +113,62 @@
 
 <script>
 
-  function setCommaToText( text ) {
-    var count = Math.trunc( text.length / 3 ), // comma count
-        arr = text.split('').reverse(),
-        s = 0;
+    function setCommaToText(text) {
+        var count = Math.trunc(text.length / 3), // comma count
+            arr = text.split('').reverse(),
+            s = 0;
 
-    count = ( count * 3 < text.length ) ? count : ( count - 1 );
+        count = (count * 3 < text.length) ? count : (count - 1);
 
-    for( i = 1; i <= count; i++ ) {
-      arr.splice((i * 3 + s), 0, ",");
-      s++;
+        for (i = 1; i <= count; i++) {
+            arr.splice((i * 3 + s), 0, ",");
+            s++;
+        }
+
+        return arr.reverse().join('');
     }
 
-    return arr.reverse().join('');
-  }
+    $(function () {
 
-  $(function() {
-
-    var b = true;
-    $(window).scroll(function() {
-      countNumbers( '.statistics', 3000 );
-    });
-
-    function countNumbers( numberContrainers, duration ) {
-      var oTop = $(numberContrainers).offset().top - window.innerHeight,
-          duration = duration || 2000;
-
-      if (b && $(window).scrollTop() > oTop) {
-        $('.count').each(function() {
-          var $this = $(this),
-              countStart = parseInt($this.attr('data-start')) || 0,
-              countTo = parseInt($this.attr('data-count'));
-
-          $({
-            countNum: countStart
-          }).animate({
-                countNum: countTo
-              },
-
-              {
-
-                duration: duration,
-                easing: 'swing',
-                step: function() {
-                  $this.text( setCommaToText( Math.floor(this.countNum).toString() ) );
-                },
-                complete: function() {
-                  $this.text( setCommaToText( this.countNum.toString() ) );
-                }
-
-              });
+        var b = true;
+        $(window).scroll(function () {
+            countNumbers('.statistics', 3000);
         });
-        b = false;
-      }
-    }
 
-  })
+        function countNumbers(numberContrainers, duration) {
+            var oTop = $(numberContrainers).offset().top - window.innerHeight,
+                duration = duration || 2000;
+
+            if (b && $(window).scrollTop() > oTop) {
+                $('.count').each(function () {
+                    var $this = $(this),
+                        countStart = parseInt($this.attr('data-start')) || 0,
+                        countTo = parseInt($this.attr('data-count'));
+
+                    $({
+                        countNum: countStart
+                    }).animate({
+                            countNum: countTo
+                        },
+
+                        {
+
+                            duration: duration,
+                            easing: 'swing',
+                            step: function () {
+                                $this.text(setCommaToText(Math.floor(this.countNum).toString()));
+                            },
+                            complete: function () {
+                                $this.text(setCommaToText(this.countNum.toString()));
+                            }
+
+                        });
+                });
+                b = false;
+            }
+        }
+
+    })
 </script>
 
 <script>
@@ -140,29 +197,35 @@
     })
 
     $('.partners__slider').owlCarousel({
-        loop:true,
-        margin:30,
-        nav:true,
-        responsive:{
-            0:{
-                items:1
+        loop: true,
+        margin: 30,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
             },
-            600:{
-                items:3
+            600: {
+                items: 3
             },
-            1000:{
-                items:4
+            1000: {
+                items: 4
             }
         }
     })
 </script>
 
 <script>
-    (function(w, d, s, h, id) {
-        w.roistatProjectId = id; w.roistatHost = h;
+    (function (w, d, s, h, id) {
+        w.roistatProjectId = id;
+        w.roistatHost = h;
         var p = d.location.protocol == "https:" ? "https://" : "http://";
-        var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init?referrer="+encodeURIComponent(d.location.href);
-        var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+        var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init?referrer=" + encodeURIComponent(d.location.href);
+        var js = d.createElement(s);
+        js.charset = "UTF-8";
+        js.async = 1;
+        js.src = p + h + u;
+        var js2 = d.getElementsByTagName(s)[0];
+        js2.parentNode.insertBefore(js, js2);
     })(window, document, 'script', 'cloud.roistat.com', 'bf66ddc4364079a63740a8a938936e21');
 </script>
 

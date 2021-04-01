@@ -722,4 +722,70 @@
 
 }
 
+// Contacts
 
+.contacts {
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 30px;
+    grid-gap: 20px;
+  }
+
+  &__column {
+    background: $white;
+    width: calc(50% - 20px);
+    padding: 30px;
+    border: 1px solid $light-grey-2;
+
+  }
+
+  &__title {
+    font-size: 24px;
+    font-family: "Gilroy-Bold", sans-serif;
+    margin-bottom: 20px;
+    color: $dark-blue;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.5;
+    width: 100%;
+    color: $dark-blue;
+    margin-bottom: 20px;
+  }
+
+  &__row {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__name {
+    color: $dark-blue;
+    font-size: 14px;
+    font-family: "Gilroy-Medium", sans-serif;
+    margin-right: 5px;
+  }
+
+  &__link {
+    color: $dark-blue;
+    font-size: 14px;
+    font-family: "Gilroy-Medium", sans-serif;
+  }
+
+  &__map {
+
+  }
+
+  .main-btn {
+    margin-top: 20px;
+  }
+
+  .map__title {
+    margin-top: 30px;
+  }
+
+}
