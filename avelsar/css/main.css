@@ -44,7 +44,7 @@ body {
   text-rendering: optimizeLegibility;
   font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
-  background: #DBF2F3;
+  background: #FFEDCB;
 }
 
 h1,
@@ -899,6 +899,7 @@ label {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
+  background: #FFFFFF;
 }
 
 .partners {
@@ -1339,7 +1340,6 @@ label {
 .header {
   position: relative;
   z-index: 2;
-  background: #FFFFFF;
   -webkit-box-shadow: 0 6px 20px rgba(165, 166, 180, 0.13);
           box-shadow: 0 6px 20px rgba(165, 166, 180, 0.13);
   min-height: 56px;
