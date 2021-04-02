@@ -320,7 +320,7 @@
     <div class="preloader">
         <div class="preloader__wrap">
             <div class="logo">
-                <img src="/img/svg/logo.svg" alt="">
+                <img src="./img/svg/logo.svg" alt="">
             </div>
         </div>
     </div>
@@ -337,111 +337,6 @@
 
 
 
-
-<script src="libs/owlcarousel/owl.carousel.min.js"></script>
-
-<script>
-
-    function setCommaToText(text) {
-        var count = Math.trunc(text.length / 3), // comma count
-            arr = text.split('').reverse(),
-            s = 0;
-
-        count = (count * 3 < text.length) ? count : (count - 1);
-
-        for (i = 1; i <= count; i++) {
-            arr.splice((i * 3 + s), 0, ",");
-            s++;
-        }
-
-        return arr.reverse().join('');
-    }
-
-    $(function () {
-
-        var b = true;
-        $(window).scroll(function () {
-            countNumbers('.statistics', 3000);
-        });
-
-        function countNumbers(numberContrainers, duration) {
-            var oTop = $(numberContrainers).offset().top - window.innerHeight,
-                duration = duration || 2000;
-
-            if (b && $(window).scrollTop() > oTop) {
-                $('.count').each(function () {
-                    var $this = $(this),
-                        countStart = parseInt($this.attr('data-start')) || 0,
-                        countTo = parseInt($this.attr('data-count'));
-
-                    $({
-                        countNum: countStart
-                    }).animate({
-                            countNum: countTo
-                        },
-
-                        {
-
-                            duration: duration,
-                            easing: 'swing',
-                            step: function () {
-                                $this.text(setCommaToText(Math.floor(this.countNum).toString()));
-                            },
-                            complete: function () {
-                                $this.text(setCommaToText(this.countNum.toString()));
-                            }
-
-                        });
-                });
-                b = false;
-            }
-        }
-
-    })
-</script>
-
-<script>
-    $('.main__slider').owlCarousel({
-        loop: true,
-        dots: true,
-        // margin:10,
-        nav: false,
-        mouseDrag: false,
-        animateOut: 'fadeOut',
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: true,
-        smartSpeed: 1500,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
-    })
-
-    $('.partners__slider').owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 4
-            }
-        }
-    })
-</script>
 
 <script>
     (function (w, d, s, h, id) {
