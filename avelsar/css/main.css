@@ -872,13 +872,14 @@ label {
 
 .tab__block .Tabcondent {
   font-family: "Gilroy-Medium", sans-serif;
-  background-color: transparent;
+  background-color: #1e3361;
+  border-radius: 6px !important;
+  overflow: hidden;
   color: #FFFFFF;
   text-align: center;
   opacity: 0;
   min-height: 330px;
   padding: 20px;
-  border-radius: 0;
   margin: 0 auto;
   -webkit-transition: all ease-in-out 0.3s;
   -o-transition: all ease-in-out 0.3s;
