@@ -667,8 +667,8 @@
     &:hover {
 
       .service__icon {
-        background: $dark-blue;
-        color: $white;
+        background: $white;
+        color: $dark-blue;
       }
     }
   }
@@ -678,7 +678,7 @@
     text-align: center;
     width: 60px;
     height: 60px;
-    border: 2px solid $dark-blue;
+    border: 2px solid $white;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -697,7 +697,7 @@
   &__title {
     font-size: 28px;
     font-family: "Gilroy-Bold", sans-serif;
-    color: $dark-blue;
+    color: $white;
     margin-bottom: 20px;
     text-align: center;
     //display: -webkit-box;
@@ -710,7 +710,7 @@
   &__text {
     font-size: 14px;
     line-height: 1.5;
-    color: $dark-blue;
+    color: $white;
     font-family: "Gilroy-Medium", sans-serif;
   }
 
