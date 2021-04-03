@@ -106,7 +106,7 @@ ul li {
   max-width: 400px;
   width: 100%;
   position: fixed;
-  background: #fff;
+  background: $dark-blue;
   top: 0;
   bottom: 0;
   max-height: 100vh;
@@ -179,13 +179,13 @@ ul li {
   flex-wrap: wrap;
 }
 .accordion__list {
-  background: #FFF;
+  background: #38397d;
   width: 100%;
 }
 .accordion__list .link {
   font-size: 0.85em;
   font-weight: 700;
-  color: $grey;
+  color: $white;
   cursor: pointer;
   border-bottom: 1px solid #eae8e8;
   display: block;
@@ -204,7 +204,7 @@ ul li {
   width: 100%;
   display: block;
   background-color: transparent;
-  color: rgba(35, 36, 85, 1);
+  color: $white;
   font-weight: normal;
   font-size: 14px;
   font-family: "SFProDisplay-Semibold", sans-serif!important;
