@@ -23,7 +23,7 @@
 
         <div class="item main__slider-item"
              style="
-            background-image: url('img/slider-3.jpg');
+            background-image: url('img/slider-1.jpg');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -156,12 +156,11 @@
                 <div class="section__body">
 
                     <div class="services__wrap">
-                        <div data-aos="fade-up"
+                        <div class="services__item"
+                             data-aos="fade-up"
                              data-aos-duration="1000"
-                             class="services__item"
-
                              style="
-                      background-image: url('img/slider-4.jpg');
+                      background-image: url('img/service-1.jpg');
                       background-size: cover;
                       background-position: center;
                       background-repeat: no-repeat;
@@ -180,7 +179,7 @@
                              data-aos-delay="150"
 
                              style="
-                      background-image: url('img/slider-1.jpg');
+                      background-image: url('img/service-2.jpg');
                       background-size: cover;
                       background-position: center;
                       background-repeat: no-repeat;
@@ -200,7 +199,7 @@
                              data-aos-delay="300"
 
                              style="
-                      background-image: url('img/slider-2.jpg');
+                      background-image: url('img/service-3.jpg');
                       background-size: cover;
                       background-position: center;
                       background-repeat: no-repeat;
@@ -448,6 +447,14 @@
                         <img src="img/partners-4.png" alt="">
                     </div>
 
+                    <div class="item partners__slider-item">
+                        <img src="img/partners-5.png" alt="">
+                    </div>
+
+                    <div class="item partners__slider-item">
+                        <img src="img/partners-6.png" alt="">
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -531,7 +538,7 @@
 <script src="libs/owlcarousel/owl.carousel.min.js"></script>
 
 <script>
-
+<!-- Statistics counter -->
   function setCommaToText( text ) {
     var count = Math.trunc( text.length / 3 ), // comma count
         arr = text.split('').reverse(),
@@ -600,7 +607,7 @@
         animateOut: 'fadeOut',
         autoplay: true,
         autoplayTimeout: 5000,
-        autoplayHoverPause: true,
+        // autoplayHoverPause: true,
         smartSpeed: 1500,
         responsive: {
             0: {
