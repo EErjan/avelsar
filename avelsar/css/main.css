@@ -649,6 +649,8 @@ label {
 
 .about-us__photo img {
   width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .about-us__text {
@@ -711,11 +713,15 @@ label {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
-  background: #02020269;
+  background: #11234ab8;
 }
 
 .services__item:hover::before {
   background: transparent;
+}
+
+.services__item:hover::after {
+  background: #02020269;
 }
 
 .services__item:hover .services__item-text {

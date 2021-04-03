@@ -236,6 +236,7 @@
 
     img {
       width: 100%;
+      object-fit: contain;
     }
   }
 
@@ -289,12 +290,17 @@
       width: 100%;
       height: 100%;
       transition: .3s;
-      background: #02020269;
+      //background: #02020269;
+      background: #11234ab8;
     }
 
     &:hover {
       &::before {
         background: transparent;
+      }
+
+      &::after {
+        background: #02020269;
       }
 
       .services__item-content {
