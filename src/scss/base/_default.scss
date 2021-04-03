@@ -21,8 +21,12 @@ body {
   font-weight: 400;
   //background: #F6F8FB;
   //background: #FFFADE;
-  background: #d1c8ffc7;
+  //background: #d1c8ffc7;
   //background: #FFEDCB;
+  //background: #161d21;
+  //background: #161d21f2;
+  background: #11234A;
+  color: $white;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li, a {
@@ -31,7 +35,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a {
 }
 
 a, a:hover, a:focus, a:active {
-  color: $dark-blue;
+  color: $white;
   text-decoration: none;
   outline: none;
 }

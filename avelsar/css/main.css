@@ -44,7 +44,8 @@ body {
   text-rendering: optimizeLegibility;
   font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
-  background: #d1c8ffc7;
+  background: #11234A;
+  color: #FFFFFF;
 }
 
 h1,
@@ -65,7 +66,7 @@ a,
 a:hover,
 a:focus,
 a:active {
-  color: #232455;
+  color: #FFFFFF;
   text-decoration: none;
   outline: none;
 }
@@ -489,11 +490,11 @@ label {
   font-family: "Gilroy-Bold", sans-serif;
   text-align: center;
   padding: 0 20px;
-  color: #232455;
+  color: #FFFFFF;
 }
 
 .section__title-secondary {
-  color: #232455;
+  color: #FFFFFF;
   font-family: "Gilroy-Bold", sans-serif;
   font-size: 48px;
 }
@@ -505,7 +506,7 @@ label {
 }
 
 .section__banner {
-  background: #232455;
+  background: #0a162f;
   color: #FFFFFF;
 }
 
@@ -576,7 +577,7 @@ label {
 .main__slider-item::before {
   content: '';
   position: absolute;
-  background: #00000082;
+  background: #00000094;
   width: 100%;
   height: 100%;
 }
@@ -693,7 +694,6 @@ label {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #232455c7;
   top: 0;
   left: 0;
   -webkit-transition: .3s;
@@ -711,7 +711,7 @@ label {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
-  background: #232455bf;
+  background: #02020269;
 }
 
 .services__item:hover::before {
@@ -802,7 +802,7 @@ label {
 .tab__block-title {
   margin-bottom: 20px;
   font-size: 28px;
-  color: #232455;
+  color: #FFFFFF;
   font-family: "Gilroy-Bold", sans-serif;
 }
 
@@ -819,7 +819,7 @@ label {
 
 .tab__block ul li {
   font-size: 16px;
-  color: #232455;
+  color: #FFFFFF;
 }
 
 .tab__block-nav {
@@ -839,8 +839,7 @@ label {
 .tab__block-nav a {
   display: inline-block;
   line-height: 30px;
-  background-color: #ffffff7a;
-  color: #232455;
+  color: #FFFFFF;
   font-family: "Gilroy-Medium", sans-serif;
   font-size: 18px;
   text-align: center;
@@ -852,8 +851,8 @@ label {
 }
 
 .tab__block-nav a.active {
-  color: #FFFFFF;
-  background-color: #232455;
+  color: #232455;
+  background-color: #FFFFFF;
 }
 
 .tab__block .tabContainer {
@@ -868,7 +867,7 @@ label {
 .tab__block .Tabcondent {
   font-family: "Gilroy-Medium", sans-serif;
   background-color: transparent;
-  color: #232455;
+  color: #FFFFFF;
   text-align: center;
   opacity: 0;
   min-height: 330px;
@@ -883,8 +882,6 @@ label {
           transform: scale(0.8);
   position: absolute;
   top: 0;
-  -webkit-box-shadow: 0px 5px 30px 0px rgba(35, 36, 85, 0.3);
-  box-shadow: 0px 5px 30px 0px rgba(35, 36, 85, 0.3);
 }
 
 .tab__block .Tabcondent.active {
@@ -899,11 +896,10 @@ label {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  background: #ffffff7a;
 }
 
 .partners {
-  background: #232455;
+  background: #0a162f;
   padding: 30px 0 45px;
 }
 
@@ -1094,9 +1090,8 @@ label {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 50px;
 }
 
@@ -1340,7 +1335,6 @@ label {
 .header {
   position: relative;
   z-index: 2;
-  background: #FFFFFF;
   -webkit-box-shadow: 0 6px 20px rgba(165, 166, 180, 0.13);
           box-shadow: 0 6px 20px rgba(165, 166, 180, 0.13);
   min-height: 56px;
@@ -1425,6 +1419,7 @@ label {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+  color: #FFFFFF;
 }
 
 .header__menu-link::before {
@@ -1434,7 +1429,7 @@ label {
   top: calc(100% - 2px);
   width: 0;
   height: 2px;
-  background: #232455;
+  background: #FFFFFF;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
@@ -1449,7 +1444,7 @@ label {
 }
 
 .header__contacts-link {
-  color: #232455;
+  color: #FFFFFF;
   font-family: "Gilroy-Bold", sans-serif;
 }
 

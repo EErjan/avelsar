@@ -78,10 +78,10 @@
     font-family: "Gilroy-Bold", sans-serif;
     text-align: center;
     padding: 0 20px;
-    color: $dark-blue;
+    color: $white;
 
     &-secondary {
-      color: $dark-blue;
+      color: $white;
       font-family: "Gilroy-Bold", sans-serif;
       font-size: 48px;
     }
@@ -98,7 +98,7 @@
   }
 
   &__banner {
-    background: $dark-blue;
+    background: $dark-bg;
     color: $white;
 
     .section__title-secondary {
@@ -160,8 +160,7 @@
     &::before {
       content: '';
       position: absolute;
-      //background: #00000045;
-      background: #00000082;
+      background: #00000094;
       width: 100%;
       height: 100%;
     }
@@ -276,8 +275,7 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background: #232455c7;
-      //background: $dark-blue;
+      //background: #02020269;
       top: 0;
       left: 0;
       transition: .3s;
@@ -291,8 +289,7 @@
       width: 100%;
       height: 100%;
       transition: .3s;
-      //background: #000000a8;
-      background: #232455bf;
+      background: #02020269;
     }
 
     &:hover {
@@ -381,7 +378,7 @@
   &-title {
     margin-bottom: 20px;
     font-size: 28px;
-    color: $dark-blue;
+    color: $white;
     font-family: "Gilroy-Bold", sans-serif;
   }
 
@@ -397,7 +394,7 @@
 
     li {
       font-size: 16px;
-      color: $dark-blue;
+      color: $white;
     }
   }
 
@@ -411,9 +408,7 @@
     a {
       display: inline-block;
       line-height: 30px;
-      //background-color: #f5f5f5;
-      background-color: #ffffff7a;
-      color: $dark-blue;
+      color: $white;
       font-family: "Gilroy-Medium", sans-serif;
       font-size: 18px;
       text-align: center;
@@ -424,8 +419,8 @@
       }
 
       &.active {
-        color: $white;
-        background-color: $dark-blue;
+        color: $dark-blue;
+        background-color: $white;
       }
     }
   }
@@ -442,7 +437,7 @@
   .Tabcondent {
     font-family: "Gilroy-Medium", sans-serif;
     background-color: transparent;
-    color: $dark-blue;
+    color: $white;
     text-align: center;
     opacity: 0;
     min-height: 330px;
@@ -455,10 +450,6 @@
     position: absolute;
     top: 0;
 
-    -webkit-box-shadow: 0px 5px 30px 0px rgba(35, 36, 85, 0.3);
-    -moz-box-shadow: 0px 5px 30px 0px rgba(35, 36, 85, 0.3);
-    box-shadow: 0px 5px 30px 0px rgba(35, 36, 85, 0.3);
-
     &.active {
       width: 100%;
       opacity: 1;
@@ -468,7 +459,6 @@
       transition: all ease-in-out 0.6s;
       transform: scale(1);
       //display:block
-      background: #ffffff7a;
     }
   }
 }
@@ -476,7 +466,9 @@
 // Partners
 
 .partners {
-  background: $dark-blue;
+  //background: $dark-blue;
+  background: #0a162f;
+
   padding: 30px 0 45px;
 
   .section__title {

@@ -3,7 +3,6 @@
 .header {
   position: relative;
   z-index: 2;
-  background: $white;
   box-shadow: 0 6px 20px rgba(165, 166, 180, 0.13);
   min-height: 56px;
   display: inline-flex;
@@ -56,6 +55,7 @@
       font-family: "Gilroy-Bold", sans-serif;
       overflow: hidden;
       transition: .3s;
+      color: $white;
 
       &::before {
         content: '';
@@ -64,7 +64,7 @@
         top: calc(100% - 2px);
         width: 0;
         height: 2px;
-        background: $dark-blue;
+        background: $white;
         transition: .3s;
       }
 
@@ -83,7 +83,7 @@
     margin-right: 45px;
 
     &-link {
-      color: $dark-blue;
+      color: $white;
       font-family: "Gilroy-Bold", sans-serif;
     }
   }
