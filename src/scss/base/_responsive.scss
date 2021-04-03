@@ -253,6 +253,10 @@
     }
   }
 
+  .footer__bottom {
+    text-align: center;
+  }
+
 }
 
 @media (max-width: 500px) {
@@ -336,10 +340,6 @@
   .footer__wrap {
     grid-template-columns: 1fr;
 
-  }
-
-  .footer__bottom {
-    text-align: center;
   }
 
 }

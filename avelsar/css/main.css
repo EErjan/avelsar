@@ -1779,6 +1779,10 @@ label {
   .footer__item:last-child {
     margin-bottom: 0;
   }
+
+  .footer__bottom {
+    text-align: center;
+  }
 }
 
 @media (max-width: 500px) {
