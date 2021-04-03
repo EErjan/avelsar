@@ -1156,24 +1156,27 @@ label {
 }
 
 .contacts__column {
-  background: #FFFFFF;
   width: calc(50% - 20px);
+}
+
+.contacts__column-inner {
   padding: 30px;
-  border: 1px solid #E6E6F2;
+  background: #0e1c3c;
+  color: #FFFFFF;
 }
 
 .contacts__title {
   font-size: 24px;
   font-family: "Gilroy-Bold", sans-serif;
   margin-bottom: 20px;
-  color: #232455;
+  color: #FFFFFF;
 }
 
 .contacts__text {
   font-size: 14px;
   line-height: 1.5;
   width: 100%;
-  color: #232455;
+  color: #FFFFFF;
   margin-bottom: 20px;
 }
 
@@ -1187,14 +1190,14 @@ label {
 }
 
 .contacts__name {
-  color: #232455;
+  color: #FFFFFF;
   font-size: 14px;
   font-family: "Gilroy-Medium", sans-serif;
   margin-right: 5px;
 }
 
 .contacts__link {
-  color: #232455;
+  color: #FFFFFF;
   font-size: 14px;
   font-family: "Gilroy-Medium", sans-serif;
 }
@@ -1204,7 +1207,7 @@ label {
 }
 
 .contacts .map__title {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .preloader {
@@ -1267,8 +1270,8 @@ label {
 .main-btn {
   font-size: 16px;
   font-family: "Gilroy-Bold", sans-serif;
-  background-color: #232455;
-  color: #FFFFFF;
+  background-color: #FFFFFF;
+  color: #232455;
   padding: 20px 40px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1586,6 +1589,23 @@ label {
   .statistics__item-text {
     font-size: 16px;
   }
+
+  .service__title {
+    font-size: 24px;
+  }
+
+  .service__container {
+    margin-top: 30px;
+  }
+
+  .contacts__map-block {
+    height: 420px;
+    overflow: hidden;
+  }
+
+  .contacts {
+    padding-bottom: 50px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -1651,6 +1671,11 @@ label {
   .cargo__truck {
     max-width: 400px;
     margin: 0 auto 20px;
+  }
+
+  .service__list {
+    width: 50%;
+    padding: 15px 20px;
   }
 }
 
@@ -1797,6 +1822,14 @@ label {
   .footer__bottom {
     text-align: center;
   }
+
+  .contacts__map-block {
+    height: 400px;
+  }
+
+  .contacts__column {
+    width: 100%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1878,6 +1911,11 @@ label {
 
   .footer__wrap {
     grid-template-columns: 1fr;
+  }
+
+  .service__list {
+    width: 100%;
+    padding: 15px 0;
   }
 }
 

@@ -726,10 +726,13 @@
   }
 
   &__column {
-    background: $white;
     width: calc(50% - 20px);
-    padding: 30px;
-    border: 1px solid $light-grey-2;
+
+    &-inner {
+      padding: 30px;
+      background: #0e1c3c;
+      color: $white
+    }
 
   }
 
@@ -737,14 +740,14 @@
     font-size: 24px;
     font-family: "Gilroy-Bold", sans-serif;
     margin-bottom: 20px;
-    color: $dark-blue;
+    color: $white;
   }
 
   &__text {
     font-size: 14px;
     line-height: 1.5;
     width: 100%;
-    color: $dark-blue;
+    color: $white;
     margin-bottom: 20px;
   }
 
@@ -755,20 +758,23 @@
   }
 
   &__name {
-    color: $dark-blue;
+    color: $white;
     font-size: 14px;
     font-family: "Gilroy-Medium", sans-serif;
     margin-right: 5px;
   }
 
   &__link {
-    color: $dark-blue;
+    color: $white;
     font-size: 14px;
     font-family: "Gilroy-Medium", sans-serif;
   }
 
   &__map {
 
+    &-block {
+
+    }
   }
 
   .main-btn {
@@ -776,12 +782,10 @@
   }
 
   .map__title {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
 }
-
-// Preloader
 
 // Preloader
 
