@@ -1217,6 +1217,31 @@ label {
   margin-top: 20px;
 }
 
+.contacts .form-control {
+  background: transparent;
+  outline: none !important;
+}
+
+.contacts .form-control::-webkit-input-placeholder {
+  color: #FFFFFF !important;
+}
+
+.contacts .form-control::-moz-placeholder {
+  color: #FFFFFF !important;
+}
+
+.contacts .form-control:-ms-input-placeholder {
+  color: #FFFFFF !important;
+}
+
+.contacts .form-control::-ms-input-placeholder {
+  color: #FFFFFF !important;
+}
+
+.contacts .form-control::placeholder {
+  color: #FFFFFF !important;
+}
+
 .preloader {
   width: 100%;
   min-height: 100vh;

@@ -793,6 +793,15 @@
     margin-top: 20px;
   }
 
+  .form-control {
+    background: transparent;
+    outline: none!important;
+
+    &::placeholder {
+      color: $white!important;
+    }
+  }
+
 }
 
 // Preloader
