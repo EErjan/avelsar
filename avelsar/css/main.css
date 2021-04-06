@@ -1347,6 +1347,11 @@ label {
 
 .calculation .modal-content {
   background: #11234a;
+  min-height: 300px;
+}
+
+.calculation .modal-dialog {
+  max-width: 850px;
 }
 
 .calculation .form-control {

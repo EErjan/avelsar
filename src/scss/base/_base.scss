@@ -913,6 +913,12 @@
 .calculation {
   .modal-content {
     background: #11234a;
+    min-height: 300px;
+
+  }
+
+  .modal-dialog {
+    max-width: 850px;
   }
 
   .form-control {

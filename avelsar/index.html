@@ -255,10 +255,14 @@
                 <div class="section__body">
 
                     <div class="services__wrap">
-                        <a href="document/sample-application.doc" download="document/sample-application.doc" class="services__item"
-                             data-aos="fade-up"
-                             data-aos-duration="1000"
-                             style="
+                        <a
+                                href="#!"
+                                data-toggle="modal"
+                                data-target="#callFromWebsite"
+                                class="services__item"
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                                style="
                       background-image: url('img/service-1.jpg');
                       background-size: cover;
                       background-position: center;
@@ -318,11 +322,15 @@
                             </div>
                         </a>
 
-                        <a href="document/agreement.doc" download="document/agreement.doc" class="services__item"
-                             data-aos="fade-up"
-                             data-aos-duration="1000"
-                             data-aos-delay="150"
-                             style="
+                        <a
+                                href="#!"
+                                data-target="#agreement"
+                                data-toggle="modal"
+                                class="services__item"
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                                data-aos-delay="150"
+                                style="
                       background-image: url('img/service-4.jpg');
                       background-size: cover;
                       background-position: center;
@@ -636,7 +644,8 @@
 <!-- Modals starts here -->
 
 <!--Передача груза получателю-->
-<div class="modal fade calculation" id="transfer-cargo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+<div class="modal fade calculation" id="transfer-cargo" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalCenterTitle"
      aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -760,6 +769,40 @@
                 <a href="tel:+(998 71) 291-20-33" class="footer__item-link">+(998 90) 121-59-55</a>
                 <a href="tel:+(998 71) 291-20-33" class="footer__item-link">+(998 97) 701-23-17</a>
                 <a href="mailto:info@avelsar.uz" class="footer__item-link">info@avelsar.uz</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-dismiss="modal">Закрыть</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--Телефон с сайта-->
+<div class="modal fade calculation" id="callFromWebsite" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <form class="modal-content">
+            <div class="modal-body p-4">
+                <a class="main-btn" href="document/sample-application.doc"
+                   download="document/sample-application.doc"
+                >Скачать - AVELSAR (Образец заявки)</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-dismiss="modal">Закрыть</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--Договор-->
+<div class="modal fade calculation" id="agreement" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <form class="modal-content">
+            <div class="modal-body p-4">
+                <a class="main-btn" href="document/agreement.doc"
+                   download="document/agreement.doc"
+                >Скачать AVELSAR (Договор)</a>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-light" data-dismiss="modal">Закрыть</button>
