@@ -204,6 +204,16 @@
   &-title {
 
   }
+
+  .main-btn {
+    margin-top: 30px;
+    color: $dark-blue;
+    padding: 15px 25px;
+
+    &:hover {
+      color: $dark-blue;
+    }
+  }
 }
 
 // About us
@@ -719,6 +729,10 @@
     font-family: "Gilroy-Medium", sans-serif;
   }
 
+  &__block {
+    text-align: center;
+  }
+
 }
 
 // Contacts
@@ -858,3 +872,63 @@
   50% { -webkit-transform: rotate(0deg) scale(1.2) }
   100% { -webkit-transform: rotate(0deg) scale(1) }
 }
+
+
+// video
+
+.video {
+  padding-bottom: 0!important;
+}
+
+.section__video {
+  width: 100%;
+  text-align: center;
+
+  video {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+
+    source {
+      width: 100%;
+    }
+  }
+}
+
+.btn__video {
+  margin-top: 30px;
+  padding: 15px 25px!important;
+}
+
+.btn__calculation {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 25px!important;
+}
+
+// Calculation
+
+.calculation {
+  .modal-content {
+    background: #11234a;
+  }
+
+  .form-control {
+    background: #11234a;
+
+    &::placeholder {
+      color: $white
+    }
+  }
+
+  select {
+    color: $white!important;
+  }
+
+  option {
+    color: $white
+  }
+}
+

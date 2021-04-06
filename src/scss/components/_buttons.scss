@@ -12,9 +12,18 @@
   position: relative;
   transform: scale(1);
   transition: .1s;
+  cursor: pointer;
 
   &:active {
     transform: scale(0.9);
+  }
+
+  &:hover {
+    color: $dark-blue;
+  }
+
+  &:focus {
+    color: $dark-blue
   }
 }
 

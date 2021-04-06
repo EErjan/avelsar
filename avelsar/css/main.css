@@ -619,6 +619,16 @@ label {
   font-family: "Gilroy-Bold", sans-serif;
 }
 
+.main__slider .main-btn {
+  margin-top: 30px;
+  color: #232455;
+  padding: 15px 25px;
+}
+
+.main__slider .main-btn:hover {
+  color: #232455;
+}
+
 .about-us__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1151,6 +1161,10 @@ label {
   font-family: "Gilroy-Medium", sans-serif;
 }
 
+.service__block {
+  text-align: center;
+}
+
 .contacts__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1299,6 +1313,74 @@ label {
   }
 }
 
+.video {
+  padding-bottom: 0 !important;
+}
+
+.section__video {
+  width: 100%;
+  text-align: center;
+}
+
+.section__video video {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section__video video source {
+  width: 100%;
+}
+
+.btn__video {
+  margin-top: 30px;
+  padding: 15px 25px !important;
+}
+
+.btn__calculation {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 25px !important;
+}
+
+.calculation .modal-content {
+  background: #11234a;
+}
+
+.calculation .form-control {
+  background: #11234a;
+}
+
+.calculation .form-control::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+
+.calculation .form-control::-moz-placeholder {
+  color: #FFFFFF;
+}
+
+.calculation .form-control:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.calculation .form-control::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.calculation .form-control::placeholder {
+  color: #FFFFFF;
+}
+
+.calculation select {
+  color: #FFFFFF !important;
+}
+
+.calculation option {
+  color: #FFFFFF;
+}
+
 .main-btn {
   font-size: 16px;
   font-family: "Gilroy-Bold", sans-serif;
@@ -1318,12 +1400,21 @@ label {
   -webkit-transition: .1s;
   -o-transition: .1s;
   transition: .1s;
+  cursor: pointer;
 }
 
 .main-btn:active {
   -webkit-transform: scale(0.9);
       -ms-transform: scale(0.9);
           transform: scale(0.9);
+}
+
+.main-btn:hover {
+  color: #232455;
+}
+
+.main-btn:focus {
+  color: #232455;
 }
 
 .third-btn {
