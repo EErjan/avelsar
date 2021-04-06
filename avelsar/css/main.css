@@ -143,7 +143,7 @@ ul li {
   max-width: 400px;
   width: 100%;
   position: fixed;
-  background: #232455;
+  background: #11234A;
   top: 0;
   bottom: 0;
   max-height: 100vh;
@@ -304,7 +304,7 @@ ul li {
 }
 
 .accordion li.open i {
-  color: #232455;
+  color: #11234A;
 }
 
 .accordion li.open i.fa-chevron-down {
@@ -331,7 +331,7 @@ ul li {
 .submenu a {
   display: block;
   text-decoration: none;
-  color: #232455;
+  color: #11234A;
   padding: 8px 10px;
   padding-left: 15px;
   font-size: 14px;
@@ -348,7 +348,7 @@ ul li {
   background: #FFFFFF;
   padding: 1rem;
   padding-left: 25px;
-  color: #232455;
+  color: #11234A;
   font-family: "SFProDisplay-Semibold", sans-serif;
 }
 
@@ -363,7 +363,7 @@ ul li {
 
 .submenu__list-holder a {
   padding: 15px 20px;
-  color: #232455;
+  color: #11234A;
 }
 
 /* Mobile accordion ends here */
@@ -463,7 +463,7 @@ label {
 }
 
 .text-color {
-  color: #232455;
+  color: #11234A;
 }
 
 .grey-text {
@@ -621,12 +621,12 @@ label {
 
 .main__slider .main-btn {
   margin-top: 30px;
-  color: #232455;
+  color: #11234A;
   padding: 15px 25px;
 }
 
 .main__slider .main-btn:hover {
-  color: #232455;
+  color: #11234A;
 }
 
 .about-us__wrap {
@@ -867,7 +867,7 @@ label {
 }
 
 .tab__block-nav a.active {
-  color: #232455;
+  color: #11234A;
   background-color: #FFFFFF;
 }
 
@@ -1008,7 +1008,7 @@ label {
 
 .statistics__item-icon {
   font-size: 82px;
-  color: #232455;
+  color: #11234A;
   margin-right: 30px;
 }
 
@@ -1019,12 +1019,12 @@ label {
 .statistics__item-numb {
   font-size: 48px;
   font-family: "Gilroy-Bold", sans-serif;
-  color: #232455;
+  color: #11234A;
 }
 
 .statistics__item-text {
   font-size: 18px;
-  color: #232455;
+  color: #11234A;
   font-family: "Gilroy-Bold", sans-serif;
 }
 
@@ -1043,7 +1043,7 @@ label {
 }
 
 .breadcrumb__main {
-  background: #232455;
+  background: #11234A;
   color: #FFFFFF;
   position: relative;
   overflow: hidden;
@@ -1118,7 +1118,7 @@ label {
 
 .service__list:hover .service__icon {
   background: #FFFFFF;
-  color: #232455;
+  color: #11234A;
 }
 
 .service__icon {
@@ -1385,7 +1385,7 @@ label {
   font-size: 16px;
   font-family: "Gilroy-Bold", sans-serif;
   background-color: #FFFFFF;
-  color: #232455;
+  color: #11234A;
   padding: 20px 40px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1414,11 +1414,11 @@ label {
 .main-btn:hover {
   border-color: #FFFFFF;
   color: #FFFFFF !important;
-  background-color: #232455 !important;
+  background-color: #11234A !important;
 }
 
 .main-btn:focus {
-  color: #232455;
+  color: #11234A;
 }
 
 .third-btn {
@@ -1814,7 +1814,7 @@ label {
 
   .mobile__phone {
     display: block;
-    color: #232455;
+    color: #11234A;
   }
 
   .my-container {
