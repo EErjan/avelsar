@@ -1397,20 +1397,24 @@ label {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: .1s;
-  -o-transition: .1s;
-  transition: .1s;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
   cursor: pointer;
+  border: 1px solid transparent;
 }
 
 .main-btn:active {
   -webkit-transform: scale(0.9);
       -ms-transform: scale(0.9);
           transform: scale(0.9);
+  color: #FFFFFF;
 }
 
 .main-btn:hover {
-  color: #232455;
+  border-color: #FFFFFF;
+  color: #FFFFFF !important;
+  background-color: #232455 !important;
 }
 
 .main-btn:focus {

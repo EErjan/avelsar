@@ -11,19 +11,23 @@
   align-items: center;
   position: relative;
   transform: scale(1);
-  transition: .1s;
+  transition: .3s;
   cursor: pointer;
+  border: 1px solid transparent;
 
   &:active {
     transform: scale(0.9);
+    color: $white;
   }
 
   &:hover {
-    color: $dark-blue;
+    border-color: $white;
+    color: $white!important;
+    background-color: $dark-blue!important;
   }
 
   &:focus {
-    color: $dark-blue
+    color: $dark-blue;
   }
 }
 
